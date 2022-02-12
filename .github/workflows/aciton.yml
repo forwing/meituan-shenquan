@@ -5,7 +5,7 @@ on:
     branches: 
       - revert-5-master
   schedule:
-    - cron: '18 17 * * *' #时间已换算，实际为11，17，21点,但github action 采取排队运行机制，可能导致您的定时计划延后，建议自行根据实际运行情况选择调整或推荐使用终端脚本
+    - cron: '*/2 * * * *' #时间已换算，实际为11，17，21点,但github action 采取排队运行机制，可能导致您的定时计划延后，建议自行根据实际运行情况选择调整或推荐使用终端脚本
 jobs:
   mt-action:
     name: my mt-action job
